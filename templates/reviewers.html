@@ -1,0 +1,353 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Scientific Journal || Reviewers </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="#">
+    <link rel="icon" type="img/png" href="{% static 'img/icons/favicon0.ico' %}"/>
+   
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/ticker-style.css'%}">
+    <link rel="stylesheet" href="{% static 'css/flaticon.css'%}">
+    <link rel="stylesheet" href="{% static 'css/slicknav.css'%}">
+    <link rel="stylesheet" href="{% static 'css/animate.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css'%}">
+    <link rel="stylesheet" href="{% static 'css/fontawesome-all.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/themify-icons.css'%}">
+    <link rel="stylesheet" href="{% static 'css/slick.css'%}">
+    <link rel="stylesheet" href="{% static 'css/nice-select.css'%}">
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+</head>
+
+<body>
+
+<header>
+    <!-- Header Start -->
+    <div class="header-area">
+        <div class="main-header ">
+            <div class="header-top black-bg d-none d-sm-block">
+                <div class="container">
+                    <div class="col-xl-12">
+                        <div class="row d-flex justify-content-between align-items-center">
+                            <div class="header-info-left">
+                                <ul>     
+                                    <li class="title"><span class="flaticon-energy"></span> <a href="/">Scientific Journal</a></li>
+                                    <li>A Reliable Platform For Publishing Papers</li>
+                                </ul>
+                            </div>
+                            <div class="header-info-right">
+                                
+                                <ul class="header-date">
+                                    <li><span class="flaticon-calendar"></span> +8801636932886</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="header-bottom header-sticky">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-8 col-lg-8 col-md-12 header-flex">
+                            <!-- sticky -->
+                            
+                            <!-- Main-menu -->
+                            <div class="main-menu d-none d-md-block">
+                                <nav>                  
+                                        <ul id="navigation">
+                                            <li><a href="/">home</a></li>
+                                            <li><a href="/latestPapers">Latest Papers</a></li>
+                                            
+
+                                            {% if user.is_authenticated %}
+                                            <li><a href="/upload">Submit Your Papers</a></li>
+                                         
+                                            <li><a href="/logout">logout</a>
+                                            
+                                            {% else %}
+                                            <li><a href="/about">about</a></li>
+                                            <li><a href="/contact">Contact</a></li>
+                                            <li><a href="/login">login</a>
+                                            {% endif %}
+                                            
+                                        </ul>
+                                </nav>
+                            </div>
+                        </div>             
+                        <div class="col-xl-4 col-lg-4 col-md-4">
+                            <div class="header-right f-right d-none d-lg-block">
+                                <!-- Heder social -->
+                                <ul class="header-social">    
+                                    <li><a href="{% static 'https://www.facebook.com/Sayeed.cse.38/' %}"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="{% static '#' %}"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="{% static '#' %}"><i class="fab fa-instagram"></i></a></li>
+                                    
+                                </ul>
+                                <!-- Search Nav -->
+                                <div class="nav-search search-switch">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Mobile Menu -->
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-md-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+</header>
+<main>
+    <div class="about-details section-padding30">
+        <div class="container">
+            <div class="row">
+                <div class="offset-xl-1 col-lg-8">
+                    <div class="about-details-cap mb-50">
+                        <h2>Resources for Reviewers</h2>
+                        <p>The peer review process is the backbone of the publication process. We are appreciative to the hundreds of researchers who dedicate their time and efforts to the evaluation of articles sent for publication in SciPub journals. The reviewer is responsible for thoroughly assessing the contents of an assigned manuscript and then provide an accurate and constructive feedback to the authors. Our articles are evaluated by at least two experts who suggest whether the manuscript should be considered for publication, requires revisions or should be outright rejected.
+                            </p>
+                        
+                    </div>
+                    <div class="about-details-cap mb-50">
+                        <h4>Before you Review</h4>
+                        <p>Once a manuscript is assigned to you for review, please consider the following points:</p>
+                        <p>Does the manuscript match your Areas of Expertise?</p>
+                        <p>Do you have enough time to spare for a detailed review of the article?</p>
+                        <p>Is there any conflict of interest with the authors?</p>
+                        <p>Are you planning to write an article on the same topic?</p>
+                        <p>If you feel that you can properly carry out the evaluation of the assigned article without any problem, you can request to take up the review process from the Editorial System.</p>
+                    </div>
+                    <div class="about-details-cap mb-50">
+                        <h2>Peer Review Process</h2>
+                        
+                            <p>Once you have taken up the article for evaluation, please keep in mind the following points:</p>
+                        <h4>Confidentiality</h4>
+                            <p>You are acting as a representative of Science Publications and all files sent to you are extremely confidential. Being a reviewer, you cannot share any documents and/or information without proper authorization from the Editorial Team. If you would like to add any colleague in the review process, you will have to discuss with an Editorial Assistant first. Reviewers should also take extreme caution with research ideas and should not in any case use the data and/or topics in their own personal manuscripts.</p>
+                        <h4>Timely Review</h4>
+                            <p>A good and productive review process takes significant time. However, as authors are eagerly awaiting the evaluation results, we request our reviewers to deliver their comments within 2-3 weeks. If you feel that the article requires extensive reading, please inform the Editorial Office within the first week.</p>
+                        <h4>Ethics</h4>
+                            <p>Being a reviewer, you also have to take into consideration if the article has any ethical issues. If you feel that the article in parts or in full has improperly copied any existing research, please raise this with the Editors. You should also check to see if the article is based on accuracy rather than personal statements and objectives.</p>
+                        <h4>Structure</h4>
+                            <p>The structure and content is the essential part of a manuscript. Reviewers should put their main focus on this portion and a majority of the review report should concentrate on the quality of the research.</p>
+                            <p>Reviewers should carefully evaluate the following aspects of a manuscript:</p>
+                        <h4>Originality and Scope</h4>
+                            <p>Is the research topic a current and innovative idea? Is there any discussion on this matter and is it related to the scope of the journal? Has there been any previous research in this area? If so, is there any need for further research? Would the journal or any reader benefit from this article? Is there significant interest in this area of research?</p>
+                        <h4>Title</h4>
+                            <p>Does the title properly explain the purpose and objective of the article? Is it too lengthy (Readers usually prefer clear and concise titles)?</p>
+                        <h4>Abstract</h4>
+                            <p>Does the abstract contain an appropriate summary for the article? Is the language used in the abstract easy to read and understand? Are there any suggestions for improvement?</p>
+                        <h4>Introduction</h4>
+                            <p>Do the authors provide adequate background on the topic and reason for this article? Does this section describe what the authors hoped to achieve? The introduction should provide a detailed outline for the article including the proposed experiment, the research method and results.</p>
+                        <h4>Materials and Methods</h4>
+                            <p>Is there detailed information on the experiment and research? Do the authors approach the subject with the proper method? Do they provide sufficient reasoning for their approach? Are the sample data and design clearly outlined? Can readers use the information given to replicate the research? Are all the measurements, equipment and materials adequately described?</p>
+                        <h4>Results</h4>
+                            <p>1. Are the results presented in a clear manner?</p>
+                            <p>2. Do the authors provide accurate research results?</p>
+                            <p>3. Is there sufficient evidence for each result? </p>
+                        <h4>Conclusion</h4>
+                            <p>Is there any flaws in the research results and methodology? Does the research provide ample data for the authors to make their conclusion? Have the authors highlighted their future implications and usage of their research? Is there any scope for further improvement? Did the authors outline the objective of their conclusions?</p>
+                        <h4>Tables and Figures</h4>
+                            <p>Are all the tables and figures used in the manuscript of high quality and original? Do they supplement the research? Are they properly referred to in the text?</p>
+                        <h4>Grammar</h4>
+                            <p>1. Is the English used in the manuscript easy to understand and properly used?</p>
+                            <p>2. Should the authors use an English Language Service to allow readers and easier understanding of their research?</p>
+                            <p>3. Highlight any minor grammar or punctuation issues that should be resolved by the authors.</p>
+                        <h4>Formatting</h4>
+                        <p>The formatting of the article is an important part of the evaluation process but reviewers should not focus their decision based on this. If a manuscript has been accepted, the SciPub team reformats the manuscript according to our template. Just keep in mind the following points:</p>
+                        <h4>Final Recommendation</h4>
+                            <p>Once you have evaluated the manuscript in a detailed manner, you can submit your review report to the Editorial Team.</p>
+                            
+                            <p>Does the article follow the journal’s format available online in the Instructions for Authors?</p>
+                            
+                            <p>Do all paragraphs, tables and figures have proper headings?</p>
+
+                        <h4>Review Decision</h4>
+                            <p>When delivering a Review Decision, you have to select from any of the following three options: </p>
+                            <p>1. Accept in Current State: The manuscript is suitable for publication in its current condition and should be considered for publication immediately. You should provide adequate reasoning for your decision.</p>
+                            <p>2. Accept with Revisions: The manuscript provides solid reasoning, focuses on an important issue and should be considered for publication. There are a few issues that should be addressed by the authors. The manuscript should be revised to fulfill the requirements of the journal.</p>
+                            <p>3. Reject: The manuscript is not suitable for publication and should not be considered for publication in its current state. You should provide adequate reason for your decision to allow authors to improve their research</p>
+                        <h4>Review Format</h4>
+                            <p>Once you have decided your final decision on the article, please prepare your comments according to the journal’s Evaluation Report.</p>
+                            <p>Impressions and Comments: This section should outline your views on the manuscript which may include the answers to the above-mentioned questions. You can provide reasoning for your decision.</p>
+                            <p>Suggestions: The suggestions section is the key part of the evaluation form. You should clearly outline all the suggestions that you have for the authors to make their manuscript ready for publication. Please make sure to add your recommendations and revisions only in this section and not mix anywhere else. You can provide the authors a checklist to follow to modify their manuscript.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+   
+
+</main>
+<footer>
+    <!-- Footer Start-->
+    <div class="footer-main footer-bg">
+        <div class="footer-area footer-padding">
+            <div class="container">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-xl-3 col-lg-3 col-md-5 col-sm-8">
+                        <div class="single-footer-caption mb-50">
+                            <div class="single-footer-caption mb-30">
+                                <!-- logo -->
+                               
+                                <div class="footer-tittle">
+                                    <div class="footer-pera">
+                                        <p class="info1">Address</p>
+                                        <p class="info2">Khagan,Birulia,Savar Dhaka-1200</p>
+                                        <p class="info2">Phone: +95 (0) 123 456 789 Cell: +880 1636932886</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-3 col-md-5 col-sm-8">
+                        <div class="single-footer-caption mb-50">
+                            <div class="single-footer-caption mb-30">
+                                <!-- logo -->
+                               
+                                <div class="footer-tittle">
+                                    <div class="footer-pera">
+                                        <p class="info1">Email.</p>
+                                        <p class="info2">
+
+
+                                        Office: Office@Scientific Journal.Com
+
+                                        Support: Support@Scientific Journal.Com
+                                        </p>
+
+                                        <p class="info2">Phone: +95 (0) 123 456 789 Cell: +880 1636932886</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-4 col-md-5 col-sm-7">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Resources</h4>
+                            </div>
+                            <!-- Popular post -->
+                            <div class="whats-right-single mb-20">
+                                
+                                <div class="whats-right-cap">
+                                    <h4><a href="/journal_Policies">Journal Policies</a></h4>
+                                     
+                                </div>
+                            </div>
+
+                            <div class="whats-right-single mb-20">
+                                
+                                <div class="whats-right-cap">
+                                    <h4><a href="/reviewers">Reviewers</a></h4>
+                                   
+                                </div>
+                            </div>
+                            <!-- Popular post -->
+                            <div class="whats-right-single mb-20">
+                                
+                                <div class="whats-right-cap">
+                                    <h4><a href="/editors">Editors </a></h4>
+                                     
+                                </div>
+                            </div>
+
+                            <div class="whats-right-single mb-20">
+                                
+                                <div class="whats-right-cap">
+                                    <h4><a href="/privacyPolicy">Privacy Policy </a></h4>
+                                     
+                                </div>
+                            </div>
+                            
+
+                            <!-- Popular post -->
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- footer-bottom aera -->
+        <div class="footer-bottom-area footer-bg">
+            <div class="container">
+                <div class="footer-border">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-xl-12 ">
+                            <div class="footer-copy-right text-center">
+                                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This is Developed With <i class="fa fa-heart" aria-hidden="true"></i> By <a href="https://www.facebook.com/Sayeed.cse.38/" target="_blank">Sayeed Anwar</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End-->
+</footer>
+<!-- Search model Begin -->
+<div class="search-model-box">
+    <div class="d-flex align-items-center h-100 justify-content-center">
+        <div class="search-close-btn">+</div>
+        <form class="search-model-form">
+            <input type="text" id="search-input" placeholder="Searching key.....">
+        </form>
+    </div>
+</div>
+<!-- Search model end -->
+
+<!-- JS here -->
+
+    <script src="{% static 'js/vendor/modernizr-3.5.0.min.js' %}"></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="{% static 'js/vendor/jquery-1.12.4.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="{% static 'js/jquery.slicknav.min.js' %}"></script>
+
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/slick.min.js' %}"></script>
+    <!-- Date Picker -->
+    <script src="{% static 'js/gijgo.min.js' %}"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="{% static 'js/wow.min.js' %}"></script>
+    <script src="{% static 'js/animated.headline.js' %}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.js' %}"></script>
+
+    <!-- Scrollup, nice-select, sticky -->
+    <script src="{% static 'js/jquery.scrollUp.min.js' %}"></script>
+    <script src="{% static 'js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'js/jquery.sticky.js' %}"></script>
+    
+    <!-- contact js -->
+    <script src="{% static 'js/contact.js' %}"></script>
+    <script src="{% static 'js/jquery.form.js' %}"></script>
+    <script src="{% static 'js/jquery.validate.min.js' %}"></script>
+    <script src="{% static 'js/mail-script.js' %}"></script>
+    <script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+    
+    <!-- Jquery Plugins, main Jquery -->	
+    <script src="{% static 'js/plugins.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    
+</body>
+</html>

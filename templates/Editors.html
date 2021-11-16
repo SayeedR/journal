@@ -1,0 +1,330 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Scientific Journal || Editors </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="#">
+    <link rel="icon" type="img/png" href="{% static 'img/icons/favicon0.ico' %}"/>
+   
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/ticker-style.css'%}">
+    <link rel="stylesheet" href="{% static 'css/flaticon.css'%}">
+    <link rel="stylesheet" href="{% static 'css/slicknav.css'%}">
+    <link rel="stylesheet" href="{% static 'css/animate.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css'%}">
+    <link rel="stylesheet" href="{% static 'css/fontawesome-all.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/themify-icons.css'%}">
+    <link rel="stylesheet" href="{% static 'css/slick.css'%}">
+    <link rel="stylesheet" href="{% static 'css/nice-select.css'%}">
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+</head>
+
+<body>
+
+<header>
+    <!-- Header Start -->
+    <div class="header-area">
+        <div class="main-header ">
+            <div class="header-top black-bg d-none d-sm-block">
+                <div class="container">
+                    <div class="col-xl-12">
+                        <div class="row d-flex justify-content-between align-items-center">
+                            <div class="header-info-left">
+                                <ul>     
+                                    <li class="title"><span class="flaticon-energy"></span> <a href="/">Scientific Journal</a></li>
+                                    <li>A Reliable Platform For Publishing Papers</li>
+                                </ul>
+                            </div>
+                            <div class="header-info-right">
+                                 
+                                <ul class="header-date">
+                                    <li><span class="flaticon-calendar"></span> +8801636932886</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="header-bottom header-sticky">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-8 col-lg-8 col-md-12 header-flex">
+                            <!-- sticky -->
+                            
+                            <!-- Main-menu -->
+                            <div class="main-menu d-none d-md-block">
+                                <nav>                  
+                                        <ul id="navigation">
+                                            <li><a href="/">home</a></li>
+                                            <li><a href="/latestPapers">Latest Papers</a></li>
+                                            
+
+                                            {% if user.is_authenticated %}
+                                            <li><a href="/upload">Submit Your Papers</a></li>
+                                           
+                                            <li><a href="/logout">logout</a>
+                                            
+                                            {% else %}
+                                            <li><a href="/about">about</a></li>
+                                            <li><a href="/contact">Contact</a></li>
+                                            <li><a href="/login">login</a>
+                                            {% endif %}
+                                        
+                                         </ul>
+                                </nav>
+                            </div>
+                        </div>             
+                        <div class="col-xl-4 col-lg-4 col-md-4">
+                            <div class="header-right f-right d-none d-lg-block">
+                                <!-- Heder social -->
+                                <ul class="header-social">    
+                                    <li><a href="{% static 'https://www.facebook.com/Sayeed.cse.38/' %}"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="{% static '#' %}"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="{% static '#' %}"><i class="fab fa-instagram"></i></a></li>
+                                    
+                                </ul>
+                                <!-- Search Nav -->
+                                <div class="nav-search search-switch">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Mobile Menu -->
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-md-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+</header>
+<main>
+    <div class="about-details section-padding30">
+        <div class="container">
+            <div class="row">
+                <div class="offset-xl-1 col-lg-8">
+                    <div class="about-details-cap mb-50">
+                        <h2>Resources for Editors</h2>
+                        <p>The editorial team is widely regarded as the backbone of any journal. All Science Publications journals are led by a team of highly qualified researchers with significant experience in their respective teams. The editorial office works closely with our Editors throughout the publication process. Visit our Peer Review Process page to learn more about our peer review process and editorial workflow.
+                            </p>
+                        <p>An editor’s main role is to handle the Peer Review process for an article. They work closely with the editorial office to take up a manuscript that falls under their areas of expertise, selecting the best reviewers, and providing authors with detailed evaluation results.</p>
+                        <p>As an editor, there are a few things you need to ensure prior to accepting a review invitation. If an editor feels that they have competing interests with the authors, they should immediately contact the editorial office to be reassigned.</p>
+                        <h2></h2>
+                        <p>Editors are responsible for choosing appropriate reviewers for evaluation. You can choose from reviewers from our database of volunteers who best suit the manuscript scope. If you feel that the existing reviewers are not properly able to judge the research, you can invite external reviewers onboard.</p>
+                        <p>Editors need to ensure that none of the reviewers have any competing interests with the authors or their work. Competing interests refer to anything that might interfere with an impartial editorial decision. Reviewers should not be selected if they have any personal, professional relationships with the authors and/or are working on a similar article.</p>
+                        <h2>Review Process</h2>
+                        <p>Journal editors are responsible for delivering thorough, informative and unbiased comments to the authors on their work.</p>
+                        <p>Editors are responsible for overseeing the review process for an article and coordinating with the reviewers to ensure a timely yet effective peer review report. As an editor, you are required to monitor the quality of the reviewer’s comments and make sure that they focus on the following parameters in their report.</p>
+                        <p>
+                            <ul>
+                            
+                                Article originality
+                                Importance of research
+                                Any ethical concerns
+                                Proper acknowledgement of prior research
+
+                            </ul>
+                        </p>
+                        <p>We have a single blinded peer-review process in which the reviewers know who the authors of the manuscript are, but the authors do not have access to the information of who the peer reviewers are. Editors need to ensure that this process is followed and that any information is not being shared with the authors and/or any other researchers.</p>
+                        <h2>Delivering a Final Decision</h2>
+                          <p>Editors need to assign a manuscript to at least 3 reviewers for evaluation and require a minimum of two reviews to deliver a final decision. The final decision can be based on the reviewer’s comments and can also incorporate the Editor’s own suggestions/recommendation.</p>
+                        
+                            <p>The final decision should reflect the efforts put in by all members and provide the authors with a detailed report including:</p>
+                        <p>
+                            <ul>
+                            
+                               
+                                Any scientific inconsistencies
+                                Drawbacks in the methods used by the authors
+                                Importance of the research topic
+                                Grammatical Errors in the writing
+                                Quality and Accuracy of Figures and Tables
+                                Suggestion on how to improve their manuscript
+
+
+                            </ul>
+                        </p>
+                        <p>When submitting a final decision, the editor is responsible for the verdict and should be able to justify any questions or concerns raised by the authors regarding the review process.</p>
+                        <p>Editors have the authority to reject a manuscript if they have any doubts on the originality, clarity and relevance of the research for the journal.</p>
+                    
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  
+    
+
+</main>
+<footer>
+    <!-- Footer Start-->
+    <div class="footer-main footer-bg">
+        <div class="footer-area footer-padding">
+            <div class="container">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-xl-3 col-lg-3 col-md-5 col-sm-8">
+                        <div class="single-footer-caption mb-50">
+                            <div class="single-footer-caption mb-30">
+                                <!-- logo -->
+                               
+                                <div class="footer-tittle">
+                                    <div class="footer-pera">
+                                        <p class="info1">Address</p>
+                                        <p class="info2">Khagan,Birulia,Savar Dhaka-1200</p>
+                                        <p class="info2">Phone: +95 (0) 123 456 789 Cell: +880 1636932886</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-3 col-md-5 col-sm-8">
+                        <div class="single-footer-caption mb-50">
+                            <div class="single-footer-caption mb-30">
+                                <!-- logo -->
+                               
+                                <div class="footer-tittle">
+                                    <div class="footer-pera">
+                                        <p class="info1">Email.</p>
+                                        <p class="info2">
+
+
+                                        Office: Office@Scientific Journal.Com
+
+                                        Support: Support@Scientific Journal.Com
+                                        </p>
+
+                                        <p class="info2">Phone: +95 (0) 123 456 789 Cell: +880 1636932886</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-4 col-md-5 col-sm-7">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Resources</h4>
+                            </div>
+                            <!-- Popular post -->
+                            <div class="whats-right-single mb-20">
+                                
+                                <div class="whats-right-cap">
+                                    <h4><a href="/journal_Policies">Journal Policies</a></h4>
+                                     
+                                </div>
+                            </div>
+
+                            <div class="whats-right-single mb-20">
+                                
+                                <div class="whats-right-cap">
+                                    <h4><a href="/reviewers">Reviewers</a></h4>
+                                   
+                                </div>
+                            </div>
+                            <!-- Popular post -->
+                            <div class="whats-right-single mb-20">
+                                
+                                <div class="whats-right-cap">
+                                    <h4><a href="/editors">Editors </a></h4>
+                                     
+                                </div>
+                            </div>
+
+                            <div class="whats-right-single mb-20">
+                                
+                                <div class="whats-right-cap">
+                                    <h4><a href="/privacyPolicy">Privacy Policy </a></h4>
+                                     
+                                </div>
+                            </div>
+                            
+
+                            <!-- Popular post -->
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- footer-bottom aera -->
+        <div class="footer-bottom-area footer-bg">
+            <div class="container">
+                <div class="footer-border">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-xl-12 ">
+                            <div class="footer-copy-right text-center">
+                                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This is Developed With <i class="fa fa-heart" aria-hidden="true"></i> By <a href="https://www.facebook.com/Sayeed.cse.38/" target="_blank">Sayeed Anwar</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End-->
+</footer>
+<!-- Search model Begin -->
+<div class="search-model-box">
+    <div class="d-flex align-items-center h-100 justify-content-center">
+        <div class="search-close-btn">+</div>
+        <form class="search-model-form">
+            <input type="text" id="search-input" placeholder="Searching key.....">
+        </form>
+    </div>
+</div>
+<!-- Search model end -->
+
+<!-- JS here -->
+
+    <script src="{% static 'js/vendor/modernizr-3.5.0.min.js' %}"></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="{% static 'js/vendor/jquery-1.12.4.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="{% static 'js/jquery.slicknav.min.js' %}"></script>
+
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/slick.min.js' %}"></script>
+    <!-- Date Picker -->
+    <script src="{% static 'js/gijgo.min.js' %}"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="{% static 'js/wow.min.js' %}"></script>
+    <script src="{% static 'js/animated.headline.js' %}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.js' %}"></script>
+
+    <!-- Scrollup, nice-select, sticky -->
+    <script src="{% static 'js/jquery.scrollUp.min.js' %}"></script>
+    <script src="{% static 'js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'js/jquery.sticky.js' %}"></script>
+    
+    <!-- contact js -->
+    <script src="{% static 'js/contact.js' %}"></script>
+    <script src="{% static 'js/jquery.form.js' %}"></script>
+    <script src="{% static 'js/jquery.validate.min.js' %}"></script>
+    <script src="{% static 'js/mail-script.js' %}"></script>
+    <script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+    
+    <!-- Jquery Plugins, main Jquery -->	
+    <script src="{% static 'js/plugins.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    
+</body>
+</html>
